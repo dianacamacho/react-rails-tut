@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import TestingComp from './TestingComp';
 
 export default class HelloWorld extends React.Component {
   static propTypes = {
@@ -39,6 +40,7 @@ export default class HelloWorld extends React.Component {
             onChange={(e) => this.updateName(e.target.value)}
           />
         </form>
+        <TestingComp message="Nested Comp"/>
       </div>
     );
   }
